@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-10-2019 a las 11:06:56
+-- Tiempo de generación: 17-10-2019 a las 11:24:38
 -- Versión del servidor: 10.4.8-MariaDB
 -- Versión de PHP: 7.3.10
 
@@ -40,9 +40,8 @@ CREATE TABLE `cambios` (
 --
 
 INSERT INTO `cambios` (`id`, `puesto`, `puesto_old`, `puesto_new`) VALUES
-(1, '', '1', 'programador'),
-(6, '', 'programador', 'programadore'),
-(7, '', 'diseñador', 'programador');
+(6, '', 'programadore', 'programador'),
+(7, '', 'programador', 'tester');
 
 -- --------------------------------------------------------
 
@@ -75,14 +74,8 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`id`, `user`, `password`, `email`, `pasadmin`, `rol`, `edit`, `ruta_imagen`, `Nombre`, `ApellidoM`, `ApellidoP`, `edad`, `puesto`, `tiempo_empresa`, `salario`, `puesto_old`, `puesto_new`) VALUES
-(1, 'aaaa', 'aaa', 'aaaa@aaaa.com', '123', 1, 1, '', '1', '1', '1', 12, 'programador', '2019-10-23 00:00:00.000000', '12', '', ''),
-(2, 'aaaa', 'aaa', 'aaaa@aaaa.com', '123', 1, 1, '', '1', '1', '1', 12, '1', '2019-10-23 00:00:00.000000', '12', '', ''),
-(3, 'aaaa', 'aaa', 'aaaa@aaaa.com', '123', 1, 1, '', '1', '1', '1', 12, '1', '2019-10-23 00:00:00.000000', '12', '', ''),
-(4, 'aaaa', 'aaa', 'aaaa@aaaa.com', '123', 1, 1, '', '1', '1', '1', 12, '1', '2019-10-23 00:00:00.000000', '12', '', ''),
-(5, 'aaaa', 'aaa', 'aaaa@aaaa.com', '123', 1, 1, '', '1', '1', '1', 12, '1', '2019-10-23 00:00:00.000000', '12', '', ''),
-(6, 'metalex', 'amarillo', 'miguel.rl@live.com.mx', 'amarillo', 1, 1, '', 'Miguel Alejandro', 'Velasco', 'Ruiz', 25, 'programadore', '2019-10-15 08:12:10.000000', '2466', '', ''),
-(7, 'Enrique', 'amarillo', 'miguel12.rl@live.com.mx', '', 2, 0, '', 'Enrique', 'Mondragon', 'Ruiz', 23, 'programador', '0000-00-00 00:00:00.000000', '2300', '', ''),
-(8, 'aaaa', 'aaa', 'aaaa@aaaa.com', '123', 1, 1, '', '1', '1', '1', 12, '1', '2019-10-23 00:00:00.000000', '12', '', '');
+(6, 'metalex', '123456', 'miguel.rl@live.com.mx', '', 1, 6, '', 'Miguel Alejandro', 'Velasco', 'Ruiz', 25, 'programador', '2019-10-15 08:12:10.000000', '2466', '', ''),
+(7, 'Enrique', 'amarillo', 'miguel12.rl@live.com.mx', '', 2, 0, '', 'Enrique', 'Mondragon', 'Ruiz', 23, 'tester', '0000-00-00 00:00:00.000000', '2300', '', '');
 
 --
 -- Disparadores `login`

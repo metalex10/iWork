@@ -102,10 +102,11 @@ if (@!$_SESSION['user']) {
 				echo "<table border='1'; class='table table-hover';>";
 					echo "<tr class='warning'>";
 						echo "<td>Id</td>";
-						echo "<td>Usuario</td>";
-						echo "<td>Password</td>";
+						echo "<td>Nombre</td>";
+						echo "<td>Edad</td>";
 						echo "<td>Correo</td>";
-						echo "<td>Password del administrador</td>";
+						echo "<td>Tiempo en la empresa</td>";
+						echo "<td>Salario</td>";
 						echo "<td>Editar</td>";
 						echo "<td>Borrar</td>";
 					echo "</tr>";
@@ -117,10 +118,11 @@ if (@!$_SESSION['user']) {
 				 while($arreglo=mysqli_fetch_array($query)){
 				  	echo "<tr class='success'>";
 				    	echo "<td>$arreglo[0]</td>";
-				    	echo "<td>$arreglo[1]</td>";
-				    	echo "<td>$arreglo[2]</td>";
+				    	echo "<td>$arreglo[8] $arreglo[9] $arreglo[10]</td>";
+				    	echo "<td>$arreglo[11]</td>";
 				    	echo "<td>$arreglo[3]</td>";
-				    	echo "<td>$arreglo[4]</td>";
+				    	echo "<td>$arreglo[13]</td>";
+						echo "<td>$arreglo[14]</td>";
 						if($_SESSION['id']==$arreglo[6]){
 				    	echo "<td><a href='actualizar.php?id=$arreglo[0]'><img src='images/actualizar.gif' class='img-rounded'></td>";
 						echo "<td><a href='admin.php?id=$arreglo[0]&idborrar=2'><img src='images/eliminar.png' class='img-rounded'/></a></td>";
