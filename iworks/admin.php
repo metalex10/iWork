@@ -155,7 +155,15 @@ if (@!$_SESSION['user']) {
 					}
 
 			?>
+			
+		
+		
+		
+		<div class="span8">
+		<h4>Historial de Puesto de Trabajo</h4>
+		
 			<?php 
+			
 			echo "<table border='1'; class='table table-hover';>";
 					echo "<tr class='warning'>";
 						echo "<td>Id</td>";
@@ -172,10 +180,7 @@ if (@!$_SESSION['user']) {
 				
 			  			  
 			  ?>
-		
-		
-		<div class="span8">
-		
+		</div>	
 		</div>	
 		</div>	
 		<br/>
